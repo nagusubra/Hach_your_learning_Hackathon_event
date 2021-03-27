@@ -8,10 +8,10 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('WaterMovement/',include('articles.urls')),
+    path('WaterMovement/',include('articles.urls')), #routing to pages like video lib, workshops, etc.
     path('about/',views.about),
-    path("",views.homepage),
-    path('projects/',views.project),
+    path("",views.homepage), #landing page
+    path('projects/',views.project), 
     path('education/',views.education)
 ]
 
