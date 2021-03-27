@@ -9,7 +9,7 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('about/',views.about),
-    path('water-movement/',include('articles.urls')), #landing page
+    path('water_movement/',include('articles.urls')), #landing page
     path('projects/',views.project), 
     path('education/',views.education)
 ]
