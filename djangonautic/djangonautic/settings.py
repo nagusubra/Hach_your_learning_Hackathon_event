@@ -123,6 +123,7 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS=(
     os.path.join(BASE_DIR,'assets'),
+    os.path.join('djangonautic/static')
     )
 
 # MEDIA_URL = '/media/'
