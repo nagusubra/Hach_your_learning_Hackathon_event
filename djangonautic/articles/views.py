@@ -5,5 +5,7 @@ from django.http import HttpResponse
 
 
 def landing(request):
-	# return HttpResponse('homepage')
 	return render(request,'articles/landing.html')
+
+def chat(request):
+	return render(request,'articles/chat.html')
