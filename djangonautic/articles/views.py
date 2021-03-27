@@ -6,11 +6,11 @@ def article_list(request):
 	articles = Article.objects.all().order_by('date') # gets everything from database
 	return render(request,'articles/article_list.html',{'articles': articles})
 
-#def article_detail(request,slug):
+def article_detail(request,slug):
 	# return HttpResponse(slug) 
-#	article = Article.objects.get(slug=slug)
-#	return render(request,'articles/article_detail.html',{'article':article})
+	 article = Article.objects.get(slug=slug)
+	 return render(request,'articles/article_detail.html',{'article':article})
 
-def test3(request):
+# def test3(request):
 	# return HttpResponse('homepage')
-	return render(request,'articles/test3.html')
+	# return render(request,'articles/test3.html')

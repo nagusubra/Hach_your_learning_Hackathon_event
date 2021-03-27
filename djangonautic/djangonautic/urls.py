@@ -8,6 +8,7 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('accounts/', include('accounts.urls')),
     path('WaterMovement/',include('articles.urls')), #routing to pages like video lib, workshops, etc.
     path('about/',views.about),
     path("",views.homepage), #landing page
