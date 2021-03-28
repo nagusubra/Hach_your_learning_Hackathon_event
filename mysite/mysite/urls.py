@@ -20,5 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('chat/', include('chat.urls')),
     path('wmove/', include('main.urls')),
-    path('personal/', include('accounts.urls'))
+    path('personal/', include('accounts.urls')),
+    path('video/', include('video.urls'))
 ]
