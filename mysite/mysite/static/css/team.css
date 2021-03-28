@@ -1,0 +1,212 @@
+html, body, main, header, footer{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 00;
+	color: white;
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+}
+
+ul{
+	position: absolute;
+	margin: 0%;
+	left: 9%;
+	display: flex;
+	border-radius: 10px;
+}
+
+ul li{
+	list-style: none;
+	text-size-adjust: auto;
+	text-align: center;
+	display: block;
+	border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+header a:active{
+	color:white;
+}
+span.home{
+	padding-left:0.5%;
+}
+span.about{
+	padding-right:0.5%;
+	float:right;
+}
+
+.home{
+	background-image: url(../images/canada_lake.jpg);
+	background-position: center;
+	width: 100%;
+	margin: 0;
+	background-size: cover;
+	height:calc(100vh - 1em);
+	overflow:hidden;
+	line-height:calc(100vh - 3em);
+	text-align:center;
+}
+
+#big{
+	font-size:8em;
+}
+
+
+header {
+	background-color: black;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+	text-align: center;
+}
+
+nav {
+	padding:0em;
+	margin: 0em;
+}
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgba(194, 220, 255, 0.4);
+}
+
+nav li {
+	display: inline-block;
+	align-items:center;
+}
+li a{
+	display: inline-block;
+	color: white;
+	padding: 14px 30px;
+	text-decoration: none;
+	line-height:2em;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+}
+li a:hover{
+	background-color:grey;
+}
+
+.container4{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: rgb(5, 113, 180);
+	width: 100%;
+}
+
+.container4 h2{
+	width: 100%;
+	color: rgb(69, 175, 236);
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: auto;
+}
+
+.container4 .row100{
+	position: relative;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(autofit,minmax(300px,1fr));
+}
+
+.container4 .row100 .col{
+	position: relative;
+	width: 100%;
+	padding: 0 10px;
+	margin: 30px 0 10px;
+	transition: 0.5s;
+}
+
+.container4 .row100 .inputbox{
+	position: relative;
+	width: 100%;
+	height: 40px;
+	color: white;
+}
+
+.container4 .row100 .inputbox .textarea{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	padding: 10px 0;
+}
+
+.container4 .row100 .inputbox .textarea textarea{
+	position: relative;
+	resize: none;
+	width: 100%;
+	height: 100%;
+}
+
+.container4 .row100 .inputbox .textarea textarea, .container4 .row100 .input{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	color: white;
+	background: transparent;
+	font-size: 20px;
+	outline: none;
+	z-index: 1;
+}
+
+input[type = "submit"]
+{
+	border: none;
+	padding: 10px 35px;
+	cursor: pointer;
+	outline: none;
+	background: rgb(0, 88, 143);
+	font-size: 20px;
+	border-radius: 2px;
+}
+
+.footer{
+	position: relative;
+	height: 200px;
+	width: 100%;
+	padding-top: 1%;
+	background-color: rgb(0, 88, 143);
+}
+
+.footer .container2{
+	position: relative;
+	display: flex;
+	flex-direction:row;
+	left: 21%;
+}	
+
+.footer .container2 ul{
+	position: absolute;
+	margin: 0%;
+	display: flex;
+}
+
+.footer .container2 li{
+	list-style: none;
+	border-right: none;
+}
+
+.footer .container2 li a{
+	text-decoration: none;
+}
+
+h2{
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	margin: auto auto 2% auto;
+	width: 10%;
+	padding: 1%;
+	border: 2px;
+}
+
