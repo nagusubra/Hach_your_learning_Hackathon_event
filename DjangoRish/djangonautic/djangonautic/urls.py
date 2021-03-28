@@ -13,9 +13,13 @@ urlpatterns = [
     path('about/',views.about),
     path("",views.homepage), #landing page
     path('projects/',views.project), 
-    path('education/',views.education)
+    path('education/',views.education),
+    path('video/',include('video.urls')),
 ]
 
 urlpatterns+=staticfiles_urlpatterns()
+
+if settings.DEBUG:
+	urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
 # urlpatterns+=static(setting.MEDIA_URL,document_root=settings.MEDIA_ROOT)
 
