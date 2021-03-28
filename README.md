@@ -1,2 +1,2 @@
-# Hach_your_learning_Hackathon_event
-Hach your learning Hackathon event 
+# Hack_your_learning_Hackathon_event
+Hack your learning Hackathon event 
