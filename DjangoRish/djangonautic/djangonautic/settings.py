@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'articles',
-    'accounts',
+    'accounts','video',
 ]
 
 MIDDLEWARE = [
@@ -127,6 +127,5 @@ STATICFILES_DIRS=(
     os.path.join('djangonautic/static')
     )
 
-# MEDIA_URL = '/media/'
-
-# MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR,"media/")
