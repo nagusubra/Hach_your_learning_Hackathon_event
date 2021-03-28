@@ -95,55 +95,18 @@ li a:hover{
 	background-color:grey;
 }
 
-.forecast {
-    margin: 0;
-    padding: .3rem;
-    background-color: #eee;
-    font: 1rem 'Fira Sans', sans-serif;
-}
-
-.container3{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 10%;
-	min-height: 65vh;
-	background: rgb(9, 143, 226);
-	width: 100%;
-}
-
-.container3 .mission h2,
-.container3 .info {
-    width: 100%;
-	color: rgb(255, 255, 255);
-	font-weight: 600;
-	font-size: 100px;
-	text-align: center;
-	
-}
-
-.container3 .info > h2{
-	margin-top: 3em ;
-    font-size: 3rem;
-}
-
-.container3 .info > p {
-    font-size: 2rem;
-}
-
-
 .container4{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 65vh;
+	min-height: 100vh;
 	background: rgb(5, 113, 180);
 	width: 100%;
 }
 
 .container4 h2{
 	width: 100%;
-	color: rgb(255, 255, 255);
+	color: rgb(69, 175, 236);
 	font-size: 36px;
 	text-align: center;
 	margin-bottom: auto;
@@ -219,7 +182,7 @@ input[type = "submit"]
 	position: relative;
 	display: flex;
 	flex-direction:row;
-	left: 14%;
+	left: 21%;
 }	
 
 .footer .container2 ul{
