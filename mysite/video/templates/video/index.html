@@ -1,4 +1,5 @@
 {% load static %}
+{% load embed_video_tags %}
 <!DOCTYPE html>
 <html>
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -99,7 +100,15 @@
       <p></p>
     </div>
   </main>
-  
+
+
+  <div class="container">
+    {% for x in obj %}
+      {% video x.video 'small' %}
+    {% endfor %}
+  </div>
+
+
   <div id="map"></div>
 <footer class="footer">
   <h3 id="contactTitle">Contact Us</h3>
