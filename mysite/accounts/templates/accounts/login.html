@@ -15,7 +15,7 @@
   <!-- <link href="../static/home.css" rel="stylesheet" type="text/css" /> -->
   <link href="{% static 'css/home.css' %}" rel="stylesheet" type="text/css" />
 
-  <link rel = "icon" href = "../images/icons/favicon.ico" 
+  <link rel = "icon" href = "{% static 'icons/favicon.ico' %}" 
         type = "image/x-icon">
 
 </head>
@@ -26,7 +26,7 @@
     <nav>
       <ul>
         <li>
-          <a href="home.html"> 
+          <a href="/wmove"> 
             <div class = "icon"></div>
             <i class="fa fa-home" aria-hidden="true"></i>
             <div class = "name" data-text="Home">Home</div>
@@ -42,7 +42,7 @@
         </li>
 
         <li>
-          <a href="blog.html"> 
+          <a href="/chat"> 
             <div class = "icon"></div>
             <i class="fa fa-users" aria-hidden="true"></i>
             <div class = "name" data-text="Discussion Forum">Discussion Forum</div>
@@ -82,7 +82,7 @@
         </li>
 
         <li>
-          <a href="login.html"> 
+          <a href="/personal/login"> 
             <div class = "icon"></div>
             <i class="fa fa-user" aria-hidden="true"></i>
             <div class = "name" data-text="Login">Login</div>
@@ -100,33 +100,14 @@
     </div>
 
     <article class="forecast">
-      <h1>Weather forecast for Seattle</h1>
       <h2> Log In </h2>
       <form class="site-form" action="/accounts/login/" method="post">
           {% csrf_token %} 
           {{form}}
           <input type="submit" value="Login">
-      </form>
-      <article class="day-forecast">
-          <h2>03 March 2018</h2>
-          <p>Rain.</p>
-      </article>
-      <article class="day-forecast">
-          <h2>04 March 2018</h2>
-          <p>Periods of rain.</p>
-      </article>
-      <article class="day-forecast">
-          <h2>05 March 2018</h2>
-          <p>Heavy rain.</p>
-      </article>
-  </article>
-  
-
+      </form>  
   </main>
   
-  <style>
-  
-  </style>
   
   <div id="map"></div>
 <footer class="footer">

@@ -12,9 +12,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Water Movement</title>
 
-  <link href="../static/home.css" rel="stylesheet" type="text/css" />
+  <link href="{% static 'css/home.css' %}" rel="stylesheet" type="text/css" />
 
-  <link rel = "icon" href = "../images/icons/favicon.ico" 
+  <link rel = "icon" href = "{% static 'icons/favicon.ico' %}" 
         type = "image/x-icon">
 
 </head>
@@ -25,7 +25,7 @@
     <nav>
       <ul>
         <li>
-          <a href="home.html"> 
+          <a href="/wmove"> 
             <div class = "icon"></div>
             <i class="fa fa-home" aria-hidden="true"></i>
             <div class = "name" data-text="Home">Home</div>
@@ -41,7 +41,7 @@
         </li>
 
         <li>
-          <a href="blog.html"> 
+          <a href="/chat"> 
             <div class = "icon"></div>
             <i class="fa fa-users" aria-hidden="true"></i>
             <div class = "name" data-text="Discussion Forum">Discussion Forum</div>
@@ -73,18 +73,10 @@
         </li>
 
         <li>
-          <a href="messaging.html"> 
+          <a href="#randomTitle"> 
             <div class = "icon"></div>
             <i class="fa fa-comments" aria-hidden="true"></i>
             <div class = "name" data-text="Messages">Messages</div>
-          </a>
-        </li>
-
-        <li>
-          <a href="login.html"> 
-            <div class = "icon"></div>
-            <i class="fa fa-user" aria-hidden="true"></i>
-            <div class = "name" data-text="Login">Login</div>
           </a>
         </li>
 
