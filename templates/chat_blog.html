@@ -7,10 +7,12 @@
 <head>
 
   <meta charset="utf-8">
+  <title>Tuts+ Chat Application</title>
+  <meta name="description" content="Tuts+ Chat Application" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Water Movement</title>
 
-  <link href="../static/home.css" rel="stylesheet" type="text/css" />
+  <link href="../static/chat_blog.css" rel="stylesheet" type="text/css" />
 
   <link rel = "icon" href = "../images/icons/favicon.ico" 
         type = "image/x-icon">
@@ -39,7 +41,7 @@
         </li>
 
         <li>
-          <a href="blog.html"> 
+          <a href="chat_blog.html"> 
             <div class = "icon"></div>
             <i class="fa fa-users" aria-hidden="true"></i>
             <div class = "name" data-text="Discussion Forum">Discussion Forum</div>
@@ -95,40 +97,74 @@
       <p><span id="big">Water Movement</span></p>
       <p></p>
     </div>
-
-    <article class="forecast">
-      <h1>Weather forecast for Seattle</h1>
-      <article class="day-forecast">
-          <h2>03 March 2018</h2>
-          <p>Rain.</p>
-      </article>
-      <article class="day-forecast">
-          <h2>04 March 2018</h2>
-          <p>Periods of rain.</p>
-      </article>
-      <article class="day-forecast">
-          <h2>05 March 2018</h2>
-          <p>Heavy rain.</p>
-      </article>
-  </article>
-  
-
   </main>
+  
+  <div id="wrapper">
+    <div id="menu">
+        <p class="welcome">Welcome, <b></b></p>
+        <p class="logout"><a id="exit" href="#">Exit Chat</a></p>
+    </div>
+
+    <div id="chatbox"></div>
+
+    <form name="message" action="">
+        <input name="usermsg" type="text" id="usermsg" />
+        <input name="submitmsg" type="submit" id="submitmsg" value="Send" />
+    </form>
+  </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript">
+      // jQuery Document
+      $(document).ready(function () {});
+  </script>
   
   <style>
   
   </style>
-  
-  <div id="map"></div>
+ 
+
 <footer class="footer">
-  <h3 id="contactTitle">Contact Us</h3>
-  <div class="contactBlock">
-    <li class="contactinfo">
-      <ul>Team water</ul>
-      <ul>email id @ email.com</ul>
-    </li>
-  </div>
-</footer>
+    <h2>Social Media</h2>
+    <ul class = "container2">
+          <li>
+            <div class = "icon"></div>
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            <a href="https://www.linkedin.com/company/watermovementyyc/"> LinkedIn</a>
+          </li>
+
+          <li>
+            <div class = "icon"></div>
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <a href="https://www.facebook.com/watermovementyyc/"> Facebook</a>
+          </li>
+          
+          <li>
+            <div class = "icon"></div>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <a href="https://www.instagram.com/watermovementyyc/?hl=en"> Instagram</a>
+          </li>
+          
+          <li>
+            <div class = "icon"></div>
+            <i class="fa fa-youtube-square" aria-hidden="true"></i>
+            <a href="https://www.youtube.com/channel/UCDPWJYkE6ujfkdKaJbamPDw"> Youtube</a>
+          </li>
+
+          <li>
+            <div class = "icon"></div>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <a href="watermovementyyc@gmail.com"> Email</a>
+          </li>
+
+          <li> 
+              <div class = "icon"></div>
+              <i class="fa fa-address-book" aria-hidden="true"></i>
+              <a href="team.html"> Our Team</a>
+            </a>
+          </li>
+
+        </ul>
+  </footer>
 
 </body>
 
