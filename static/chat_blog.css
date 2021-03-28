@@ -3,7 +3,7 @@ html, body, main, header, footer{
 	padding: 0;
 	border: 0;
 	font-family: 'Montserrat', sans-serif;
-    font-weight: 0;
+    font-weight: 00;
 	color: white;
 	scroll-behavior: smooth;
 	box-sizing: border-box;
@@ -91,6 +91,148 @@ li a:hover{
 	background-color:rgb(157, 248, 241);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+  }
+   
+  body {
+    margin: 0px auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+  }
+   
+  form {
+    padding: 15px 25px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+   
+  form label {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+   
+  input {
+    font-family: "Lato";
+  }
+   
+  a {
+    color: #6d97e6;
+    text-decoration: none;
+  }
+   
+  a:hover {
+    text-decoration: underline;
+  }
+   
+  #wrapper,
+  #loginform {
+    margin: 0 auto;
+    padding-bottom: 25px;
+    background: #eee;
+    width: 600px;
+    max-width: 100%;
+    border: 2px solid #212121;
+    border-radius: 4px;
+  }
+   
+  #loginform {
+    padding-top: 18px;
+    text-align: center;
+  }
+   
+  #loginform p {
+    padding: 15px 25px;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+   
+  #chatbox {
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 10px;
+    background: #fff;
+    height: 300px;
+    width: 530px;
+    border: 1px solid #a7a7a7;
+    overflow: auto;
+    border-radius: 4px;
+    border-bottom: 4px solid #a7a7a7;
+  }
+   
+  #usermsg {
+    flex: 1;
+    border-radius: 4px;
+    border: 1px solid #2f3994;
+  }
+   
+  #name {
+    border-radius: 4px;
+    border: 1px solid rgb(0, 88, 143);
+    padding: 2px 8px;
+  }
+   
+  #submitmsg,
+  #enter{
+    background: rgb(0, 88, 143);
+    border: 2px solid rgb(0, 88, 143);
+    color: white;
+    padding: 4px 10px;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+   
+  .error {
+    color: #ff0000;
+  }
+   
+  #menu {
+    padding: 15px 25px;
+    display: flex;
+  }
+   
+  #menu p.welcome {
+    flex: 1;
+  }
+   
+  a#exit {
+    color: white;
+    background: rgb(0, 88, 143);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+   
+  .msgln {
+    margin: 0 0 5px 0;
+  }
+   
+  .msgln span.left-info {
+    color: rgb(0, 88, 143);
+  }
+   
+  .msgln span.chat-time {
+    color: #666;
+    font-size: 60%;
+    vertical-align: super;
+  }
+   
+  .msgln b.user-name, .msgln b.user-name-left {
+    font-weight: bold;
+    background: #546e7a;
+    color: white;
+    padding: 2px 4px;
+    font-size: 90%;
+    border-radius: 4px;
+    margin: 0 5px 0 0;
+  }
+   
+  .msgln b.user-name-left {
+    background: orangered;
+  }
 .container3{
 	display: flex;
 	justify-content: center;
@@ -204,79 +346,6 @@ input[type = "submit"]
 	font-size: 20px;
 	border-radius: 2px;
 }
-
-body{
-	background: rgb(5, 113, 180);
-	font-family: 'Montserrat', sans-serif;
-  }
-  
-  .wrapper{
-	margin-top: 2%;
-  }
-  
-  .wrapper h1{
-	font-family: 'Montserrat', sans-serif;
-	font-size: 52px;
-	margin-bottom: 60px;
-	text-align: center;
-  }
-  
-  .team{
-	display: flex;
-	justify-content: center;
-	width: auto;
-	text-align: center;
-	flex-wrap: wrap;
-  }
-  
-  .team .team_member{
-	background: #fff;
-	margin: 5px;
-	margin-top: 100px;
-	margin-bottom: 50px;
-	width: 300px;
-	padding: 20px;
-	line-height: 20px;
-	color: #8e8b8b;  
-	position: relative;
-  }
-  
-  .team .team_member h3{
-	color: #81c644;
-	font-size: 26px;
-	margin-top: 50px;
-  }
-
-  .team .team_member a{
-	color: #146aeb;
-	font-size: 26px;
-	margin-top: 50px;
-  }
-  
-  .team .team_member p.role{
-	color: #ccc;
-	margin: 12px 0;
-	font-size: 12px;
-	text-transform: uppercase;
-  }
-  
-  .team .team_member .team_img{
-	margin-top: 2em ;
-	position: absolute;
-	top: -145px;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 100px;
-	height: 100px;
-	border-radius: 0%;
-	background: #146aeb;
-  }
-  
-  .team .team_member .team_img img{
-	width: 100px;
-	height: 100px;
-	padding: 5px;
-  }
 
 .footer{
 	position: relative;
