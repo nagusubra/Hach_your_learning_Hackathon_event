@@ -8,12 +8,18 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('accounts/', include('accounts.urls')),
+    path('WaterMovement/',include('articles.urls')), #routing to pages like video lib, workshops, etc.
     path('about/',views.about),
-    path('water_movement/',include('articles.urls')), #landing page
+    path("",views.homepage), #landing page
     path('projects/',views.project), 
-    path('education/',views.education)
+    path('education/',views.education),
+    path('video/',include('video.urls')),
 ]
 
 urlpatterns+=staticfiles_urlpatterns()
+
+if settings.DEBUG:
+	urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
 # urlpatterns+=static(setting.MEDIA_URL,document_root=settings.MEDIA_ROOT)
 
