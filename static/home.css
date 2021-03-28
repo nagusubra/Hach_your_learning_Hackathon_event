@@ -2,14 +2,31 @@ html, body, main, header, footer{
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-family: "Fantasy";
-    font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 00;
 	color: white;
 	scroll-behavior: smooth;
 }
+
+ul{
+	position: absolute;
+	margin: 0%;
+	left: 9%;
+	display: flex;
+	border-radius: 10px;
+}
+
+ul li{
+	list-style: none;
+	text-size-adjust: auto;
+	text-align: center;
+	display: block;
+	border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
 a {
 	text-decoration: none;
-	color: white;
+	color: black;
 }
 
 header a:active{
@@ -23,7 +40,7 @@ span.about{
 	float:right;
 }
 
-.homescreen{
+.home{
 	background-image: url(../images/canada_lake.jpg);
 	background-position: center;
 	width: 100%;
@@ -66,20 +83,50 @@ header {
 	text-align: center;
 }
 
+.forecast {
+    margin: 0;
+    padding: .3rem;
+    background-color: rgb(126, 169, 233);
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+.forecast > h1,
+.day-forecast {
+    margin: .5rem;
+    padding: .3rem;
+    font-size: 1.2rem;
+}
+
+.day-forecast {
+    background: right/contain content-box border-box no-repeat
+        url('../images/icons/water_drop.png') white;
+}
+
+.day-forecast > h2,
+.day-forecast > p {
+    margin: .2rem;
+    font-size: 1rem;
+}
+
+
 nav {
-	padding:0;
-	margin: 0;
+	padding:0em;
+	margin: 0em;
 }
 nav ul{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color:inherit;
-
+	background-color: rgba(194, 220, 255, 0.4);
 }
+
+.crumb {
+    display: inline-block;
+}
+
 nav li {
-	display:inline;
+	display: inline-block;
 	align-items:center;
 }
 li a{
@@ -155,6 +202,16 @@ li a:hover{
 	-ms-user-select: none;
 	user-select: none;
 }
+
+.container .content {
+	position: absolute; /* Position the background text */
+	bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+	background: rgb(0, 0, 0); /* Fallback color */
+	background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+	color: #f1f1f1; /* Grey text */
+	width: 100%; /* Full width */
+	padding: 20px; /* Some padding */
+  }
 
 .checkmark {
 	position: absolute;
